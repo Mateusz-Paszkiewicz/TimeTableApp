@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_layout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:parentActivityName=".WeekActivity"
+        android:background="@color/design_default_color_primary"
+        android:id="@+id/ToolbarDay">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ToolbarDay"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:divider="@null"
+        android:id="@+id/lv_day"
+        android:dividerHeight="10dp">
+
+    </ListView>
+
+</RelativeLayout>

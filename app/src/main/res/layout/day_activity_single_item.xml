@@ -1,0 +1,54 @@
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:alpha="0.70">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.example.timetableapp.Utils.LetterImageView
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:id="@+id/iv_DayLetter"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+        </com.example.timetableapp.Utils.LetterImageView>
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/iv_DayLetter"
+            android:text="Title"
+            android:textSize="24sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/black"
+            android:text="Time"
+            android:layout_alignBottom="@id/iv_DayLetter"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"></TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

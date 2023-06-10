@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">TimeTableApp</string>
+
+    <string-array name="titles">
+        <item> Timetable </item>
+        <item> Calendar </item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item> Timetable for organizing your day with exact hours of activities! </item>
+        <item> Coming soon! </item>
+    </string-array>
+
+    <string-array name="Week">
+        <item> Monday </item>
+        <item> Tuesday </item>
+        <item> Wednesday </item>
+        <item> Thursday </item>
+        <item> Friday </item>
+        <item> Saturday </item>
+        <item> Sunday </item>
+    </string-array>
+
+<!--    <string-array name="Monday">-->
+<!--        <item>Breakfast</item>-->
+<!--        <item>Workout</item>-->
+<!--        <item>Studying</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="Tuesday">-->
+<!--        <item>Breakfast</item>-->
+<!--        <item>Studying</item>-->
+<!--        <item>Running</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="Wednesday">-->
+<!--        <item>Studying</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="Thursday">-->
+<!--        <item>Visit Friend</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="Friday">-->
+<!--        <item>Study</item>-->
+<!--        <item>Coding</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="Saturday">-->
+<!--        <item>Rest</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="Sunday">-->
+<!--        <item>Rest</item>-->
+<!--    </string-array>-->
+
+
+
+<!--    <string-array name="MondayTimer">-->
+<!--        <item>10:00 - 11:00</item>-->
+<!--        <item>11:00 - 13:00</item>-->
+<!--        <item>13:00 - 15:00</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="TuesdayTimer">-->
+<!--        <item>10:00 - 11:00</item>-->
+<!--        <item>11:00 - 13:00</item>-->
+<!--        <item>13:00 - 15:00</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="WednesdayTimer">-->
+<!--        <item>10:00 - 13:00</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="ThursdayTimer">-->
+<!--        <item>10:00 - 12:30</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="FridayTimer">-->
+<!--        <item>10:00 - 11:00</item>-->
+<!--        <item>11:00 - 13:00</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="SaturdayTimer">-->
+<!--        <item>10:00 - 14:00</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="SundayTimer">-->
+<!--        <item>10:00 - 14:00</item>-->
+<!--    </string-array>-->
+
+</resources>
