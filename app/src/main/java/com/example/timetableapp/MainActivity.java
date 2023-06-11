@@ -42,12 +42,14 @@ public class MainActivity extends AppCompatActivity {
                 SetupDB setupObj = new SetupDB();
                 setupObj.setup(this, dayDao);
             }
+
+            TaskDao taskDao = db.taskDao();
+            taskDao.deleteNullTasks();
         });
 
         executor.shutdown();
 
         layout = (RelativeLayout) findViewById(R.id.main_layout);
-        layout.setBackgroundResource(R.drawable.background);
 
         //Very important, that setupUI executes first, so TB gets initialised
         setupUI();

@@ -30,8 +30,9 @@
             android:layout_marginLeft="6dp"
             android:textColor="@color/black"
             android:layout_toRightOf="@id/iv_letter"
+            android:layout_centerVertical="true"
             android:text="Title"
-            android:textSize="24sp"
+            android:textSize="32sp"
             android:textStyle="bold"></TextView>
 
         <ImageView

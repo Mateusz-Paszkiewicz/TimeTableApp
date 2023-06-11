@@ -49,6 +49,30 @@
             android:layout_alignParentRight="true"
             android:textSize="16sp"></TextView>
 
+        <ImageButton
+            android:id="@+id/buttonEdit"
+            android:scaleType="fitCenter"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_edit"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_DayLetter"
+            android:layout_alignBottom="@id/iv_DayLetter"
+            />
+
+        <ImageButton
+            android:id="@+id/buttonDelete"
+            android:scaleType="fitCenter"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_delete"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/buttonEdit"
+            android:layout_alignBottom="@id/iv_DayLetter"
+            />
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

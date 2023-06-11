@@ -5,14 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/main_layout">
+    android:id="@+id/main_layout"
+    android:background="@drawable/background">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:parentActivityName=".WeekActivity"
         android:background="@color/design_default_color_primary"
-        android:id="@+id/ToolbarDay">
+        android:id="@+id/ToolbarDay"
+        >
+
+        <ImageButton
+            android:id="@+id/buttonAdd"
+            android:scaleType="fitCenter"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_add"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="end"/>
 
     </androidx.appcompat.widget.Toolbar>
 
