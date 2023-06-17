@@ -3,6 +3,7 @@ package com.example.timetableapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -42,6 +43,8 @@ public class WeekActivity extends AppCompatActivity {
             setSupportActionBar(toolbar);
             getSupportActionBar().setTitle("Week table");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+            toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         }
     }
 

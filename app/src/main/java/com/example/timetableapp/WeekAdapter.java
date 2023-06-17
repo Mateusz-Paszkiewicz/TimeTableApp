@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 
 import com.example.timetableapp.Utils.LetterImageView;
 
-public class WeekAdapter extends ArrayAdapter {
+public class WeekAdapter extends ArrayAdapter<String> {
 
     private int resource;
     private LayoutInflater layoutInflater;

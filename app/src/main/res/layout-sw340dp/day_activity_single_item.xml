@@ -9,8 +9,8 @@
         android:layout_height="wrap_content">
 
         <com.example.timetableapp.Utils.LetterImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
             android:id="@+id/iv_DayLetter"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
@@ -31,7 +31,7 @@
             android:textColor="@color/black"
             android:layout_toRightOf="@id/iv_DayLetter"
             android:text="Title"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:textStyle="bold"></TextView>
 
         <TextView
@@ -52,8 +52,8 @@
         <ImageButton
             android:id="@+id/buttonEdit"
             android:scaleType="fitCenter"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/ic_edit"
             android:layout_marginEnd="5dp"
             android:layout_marginTop="5dp"
@@ -64,11 +64,11 @@
         <ImageButton
             android:id="@+id/buttonDelete"
             android:scaleType="fitCenter"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/ic_delete"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/buttonEdit"
             android:layout_alignBottom="@id/iv_DayLetter"
             />

@@ -2,6 +2,7 @@ package com.example.timetableapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.room.Room;
 
 import android.content.Intent;
@@ -66,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
         if(toolbar != null){
             setSupportActionBar(toolbar);
             getSupportActionBar().setTitle("Organizer");
+
+            toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         }
     }
 

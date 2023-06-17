@@ -8,14 +8,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/iv_main"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+        <com.example.timetableapp.Utils.LetterImageView
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:id="@+id/iv_letter"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"></ImageView>
+            android:layout_marginBottom="10dp">
+
+        </com.example.timetableapp.Utils.LetterImageView>
 
         <TextView
             android:id="@+id/tv_main"
@@ -26,33 +28,17 @@
             android:layout_marginEnd="7dp"
             android:layout_marginBottom="2dp"
             android:layout_marginLeft="6dp"
-            android:layout_toRightOf="@id/iv_main"
-            android:layout_toLeftOf="@id/tv_click"
             android:textColor="@color/black"
+            android:layout_toRightOf="@id/iv_letter"
+            android:layout_centerVertical="true"
             android:text="Title"
-            android:textSize="18sp"
+            android:textSize="26sp"
             android:textStyle="bold"></TextView>
-
-        <TextView
-            android:id="@+id/tv_description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_main"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="7dp"
-            android:layout_marginBottom="2dp"
-            android:layout_marginLeft="6dp"
-            android:layout_toRightOf="@id/iv_main"
-            android:layout_toLeftOf="@id/tv_click"
-            android:textColor="@color/black"
-            android:text="description"
-            android:textSize="13sp"></TextView>
 
         <ImageView
             android:id="@+id/tv_click"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginStart="5dp"
@@ -61,6 +47,7 @@
             android:layout_marginBottom="5dp"
             android:src="@drawable/enter">
         </ImageView>
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

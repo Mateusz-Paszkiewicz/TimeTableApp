@@ -9,12 +9,14 @@
         android:id="@+id/editTextSubject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Subject" />
+        android:hint="Subject"
+        android:maxLength="40"/>
 
     <EditText
         android:id="@+id/editTextTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Time" />
+        android:hint="Time"
+        android:maxLength="20"/>
 
 </LinearLayout>

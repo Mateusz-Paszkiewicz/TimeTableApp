@@ -2,6 +2,7 @@ package com.example.timetableapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.room.Room;
 
 import android.app.AlertDialog;
@@ -61,6 +62,8 @@ public class DayActivity extends AppCompatActivity {
             setSupportActionBar(toolbar);
             getSupportActionBar().setTitle(WeekActivity.sharedPreferences.getString(WeekActivity.SET_DAY, null));
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+            toolbar.setTitleTextColor(getResources().getColor(R.color.white));
         }
     }
 

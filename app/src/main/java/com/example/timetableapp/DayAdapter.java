@@ -34,7 +34,6 @@ public class DayAdapter extends BaseAdapter {
     private LetterImageView _letterImageView;
     private TextView _subject, _time;
     private RoomDatabase _db=null;
-    String _editedSubject, _editedTime;
     private int _dayNumber;
     private TaskDao _taskDao;
 
@@ -82,12 +81,15 @@ public class DayAdapter extends BaseAdapter {
         _editButton = (ImageView)view.findViewById(R.id.buttonEdit);
         _deleteButton = (ImageView)view.findViewById(R.id.buttonDelete);
 
-        _subject.setText(_subjects.get(i));
-        _time.setText(_times.get(i));
+        if(!_subjects.get(i).isEmpty())
+            _subject.setText(_subjects.get(i));
+
+        if(!_times.get(i).isEmpty())
+            _time.setText(_times.get(i));
 
         _letterImageView.setOval(true);
 
-        if(_subjects.get(i) != null) {
+        if(!_subjects.get(i).isEmpty()) {
             _letterImageView.setLetter(_subjects.get(i).charAt(0));
         }
 
@@ -97,7 +99,7 @@ public class DayAdapter extends BaseAdapter {
                 String oldSubject = _subjects.get(i);
                 String oldTime = _times.get(i);
 
-                showEditTaskDialog(new EditTaskDialogListener() {
+                showEditTaskDialog(oldSubject, oldTime, new EditTaskDialogListener() {
                     @Override
                     public void onTaskEdited(String subject, String time) {
                         _subjects.set(i, subject);
@@ -137,11 +139,15 @@ public class DayAdapter extends BaseAdapter {
         return view;
     }
 
-    private void showEditTaskDialog(EditTaskDialogListener listener) {
+    private void showEditTaskDialog(String currentSubject, String currentTime, EditTaskDialogListener listener) {
         AlertDialog.Builder builder = new AlertDialog.Builder(_context);
         View dialogView = LayoutInflater.from(_context).inflate(R.layout.dialog_edit_task, null);
         EditText editTextSubject = dialogView.findViewById(R.id.editTextSubject);
         EditText editTextTime = dialogView.findViewById(R.id.editTextTime);
+
+        // Set the starting text for the EditText fields
+        editTextSubject.setText(currentSubject);
+        editTextTime.setText(currentTime);
 
         builder.setView(dialogView)
                 .setTitle("Edit Task")

@@ -9,8 +9,8 @@
         android:layout_height="wrap_content">
 
         <com.example.timetableapp.Utils.LetterImageView
-            android:layout_width="105dp"
-            android:layout_height="105dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:id="@+id/iv_letter"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
@@ -32,13 +32,13 @@
             android:layout_toRightOf="@id/iv_letter"
             android:layout_centerVertical="true"
             android:text="Title"
-            android:textSize="32sp"
+            android:textSize="20sp"
             android:textStyle="bold"></TextView>
 
         <ImageView
             android:id="@+id/tv_click"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginStart="5dp"
